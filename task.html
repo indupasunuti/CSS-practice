@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    *{
+    margin: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 25px;
+    width: 100vwh;
+    border: 2px solid black;
+    display: flex; 
+    gap:120px;
+    /* border: none; */
+}
+div{
+ 
+}
+/* LEFT */
+div>img{
+    position: relative;
+    bottom:11px;
+}
+div>i{
+
+    position: relative;
+    bottom: 25px;
+    padding: 10px;
+}
+div>span{
+    font-size: 4px;
+     font-family: "Poppins", sans-serif;
+position: relative;
+top: -32px;
+left: -4px;    
+}
+#nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* MIDDLE */
+#nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav2>input{
+    border:1px solid #cfcfcf;
+    border-radius: 20px;
+    padding-left:15px;
+    font-size:16px;
+    outline:none;
+}
+/* .search_btn{
+   position: relative;
+   left: -81px;
+   font-size: 12px;
+    border:1px solid #cfcfcf;
+    border: none;
+    border-radius:10px;
+    cursor:pointer;
+} */
+ #nav2>i{
+     position: relative;
+   left: -81px;
+ }
+
+</style>
+<body>
+    <nav id="navbar">
+        <div id="nav1">
+            <i class="fa-solid fa-bars"></i>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAApVBMVEX/////AAAhISEAAAAQEBAYGBirq6sdHR0VFRX7+/t4eHhAQED39/dUVFTw8PAaGhpsbGxkZGQ5OTlcXFz/CQn/iYlPT0//qam/v7+IiIiZmZnl5eVKSkoJCQm2trb/l5eRkZH/8fH/6urPz8//xMT/vb3/1NT/TEyioqL/YmL/ISHa2towMDD/zMz+j4/6np7/srL/fX3+3d3/QUH/Kyv/Nzf/a2sJ8NyoAAAE3klEQVR4nO2YbXeiOhCAYxLkRQQVq/JaKG21lXbbbrv//6ftTIJWF7By67lnz9l5vlCgJI9hMpnAGEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQxL+HbRdFcfN0e/eyXC6vr6+Q5+sfcPJyd3t/UxS2/X8r3T0/fAxO87h+fSku2WdcAt23b359IbTj/b5+wgP0yLn4Z2fLtneIe3RvmHIuOoff/nmm02Awf9MmAojUsxP4y+9seiUO2RxLCW52S12f7TQYrPUjicWlgw16M5+LvHOkVoJ/kg7/lOoeqeL8gQL0UG0E90f41mJoOV2dkJJSmiBkwlH0kHp77CO1VM+UEhrc6qEwZ3Gn1HbiOM7I5GYFx8lxWJ+UeurjNHhVz3jQkcABCgW3pp1OGkdyY9S8fFLqtpfUw76j1IHj2OB/xO9lpJa9pNbFrkUjgRGrTP0aLy111ej48f6hU+pDR7oHscQ9Vprcn0HDdpkHyTTXwVWuVqvShmt4PJDCc3zlK31dSTF3OB459c/yMme8mGQ4gV4bHc8Ze+mK/nctxSAVWCUmwDSEvOUIYRlS+OpNjiElJS5zF3g8kErgvIIjh2OgpVJvAg8Krn5NnIjUslKBE6c5KnM1gO1a8zqpRwLzTphykTE2gfalgEmmgn8quRWAVGBxa3wgNfa5iceZya2JlqoCkWIGw7nizSQ0AKdy4bFmmlJS7K39HT5pKcgFaW6PLbPasi3+5mnmm0qmjxQXYehjYvVqySyCrCZK1hyReR1t9+tuqXhkWtM45QZ0m6eQHCFmhE5ePaQwn8JocwNibOTrU4lLxLxTihUtM7OWYoFhjkBDhMydwqIDvcSVTl59pFy9FMlMT2Rwi1LMfC1x8zk17ecuKVhpLEidMDRq/YNw9xJ97CMFMxdfPuS6Lb7MWBUP8F89pW7rO7DqmZWJeSGG7IA1g7fwVUbtKeVpqdKvpTDUTkmden2swghFidjgeykZ9JZyhXp8ZcEB4j37Qqo10Hd1HnNwMmNoxvJTCi16Stk4dyOWqTXe87D2452B3p4SHvdS6ifx7bel2KcUplXVKntvl+pInruMDgFacSiq2EWlZA1rvqNTy8zHXsqFyYaZ4IJSaVjDmruGUwvyumhK+ZcIdBVT+y1Is0o4xQNrSpnfSgnxwezb17D96qlfLVKYi/NvJc90g1WQWqTixdTJe5bDz00pD8pPla+gN6wZUGp8phTTy4y10j+txBXUEqP/tHE4ksJe/epzQZ5IVQCi45FUYMAaYKve91Kxus39rV6QoR7bpNhq0ZYiO3lrkcKMJcIsMaBmgFDN8dQZjnAEDqWwdyPcqOu1lDWLHKPOLBFujLIhDvew32b0J2uRYlCecZniJFTlLuZkKWRU7aVUryrbStgo+zspc1YJlTOxYvW4wf1Uwk21Z+uxbb8/kBpB+p3WeRSKWsMSeq9sT4XhSxHZli6HJ3UZbCfCh+sbL1XPbeByWFrCMESg9g9lKiwfWvHV/rD/Bw7V9zCKomz393SxCMJ6Rrv5IpliaZTnuCnO8jxXxbsXJnjd3ajrJTxestgZj/N6T+Pl42QRDHfJ6u5qfcanoOX5n4K6tk5ffeQ6vq8+mr09qW9mP66f/4aPZgRBEARBEARBEARBEARBEARBEARBEARBEP8KvwFgYW/5antJ3wAAAABJRU5ErkJggg==" alt="" height="40px" width="40px">
+            <span>IN</span>
+        </div>
+
+        <!-- MIDDLE -->
+        <div id="nav2">
+            <input type="text" placeholder="Search">
+            
+              <!-- <button class="search_btn"> -->
+                <!-- <i class="fas fa-search"></i> -->
+            <!-- </button> -->
+
+            <button class="mic">
+                <i class="fas fa-microphone"></i>
+            </button>
+            </div>
+    </nav>
+</body>
+</html>

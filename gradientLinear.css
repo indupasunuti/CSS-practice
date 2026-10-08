@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid black;
+    height: 100vh;
+     background: linear-gradient(to top left,red,blue,green,yellow);
+    background: repeating-linear-gradient(to top left,red 0% 10%,blue 10% 20%,green 20% 30%,yellow 30% 40%);
+
+    background: repeating-radial-gradient(circle,aqua,rgb(236, 132, 238),rgb(51, 51, 227),yellow,rgb(236, 29, 236));
+    background: repeating-radial-gradient(circle,red 0% 10%,blue 10% 20%,green 20% 30%,yellow 30% 40%); 
+
+    background: repeating-conic-gradient(rgb(228, 46, 186),rgb(11, 218, 11),rgb(225, 75, 38),blue,rgb(102, 243, 102));
+    background: repeating-radial-gradient(circle,rgb(51, 255, 51) 0% 10%,blue 10% 20%,rgb(244, 244, 11) 20% 30%,rgb(17, 209, 215) 30% 40%); 
+}

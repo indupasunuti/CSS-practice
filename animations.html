@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* TASK 1 */
+
+    #colors{
+        
+        height: 100vh;
+        width: 100wh;
+        border: 2px solid black;
+        animation: colors 4s 100ms ease alternate infinite;
+        
+    }
+    @keyframes colors {
+        0%{
+            background-color: orangered;
+        }
+        50%{
+            background-color: white;
+        }
+        100%{
+            background-color: green;
+        }
+
+        }
+        
+        
+        /* TASK--2 */
+          body{
+        height: 100vh;
+        width: 100wh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(204, 165, 240);
+        border: none;
+    }
+    #box{
+        height: 270px;
+        width: 450px;
+        /* border: 2px solid black; */
+        border-radius: 12px;
+        display: flex;
+        overflow: hidden;
+    }
+    #box>img{
+        min-height: 100%;
+        min-width: 100%;
+        animation: slider 5s 100ms ease alternate infinite;
+    }
+    @keyframes slider {
+        0%{
+            transform: translateX(0%);
+        }
+        12.5%{
+            transform: translateX(0%);
+        }
+        25%{
+            transform: translateX(-100%);
+        }
+        37.5%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-200%);
+        }
+        62.5%{
+            transform: translateX(-200%);
+        }
+        75%{
+            transform: translateX(-300%);
+        }
+
+        100%{
+            transform: translateX(-300%);
+        }
+        
+    }
+</style>
+<body>
+    <!-- TASK--1 -->
+    <div id="colors"></div>
+
+    <!-- TASK--2 -->
+      <section id="box">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.Ck4H3lX-euqS4WN0_brEoQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.qOnNfah3wcbBhT8crtu0IwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <img src="https://www.stockgro.club/blogs/wp-content/uploads/2023/09/zepto.jpg" alt="">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.jbflkmFpVvDzVJxwq9p87AHaFk?r=0&w=699&h=526&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    </section>
+</body>
+</html>

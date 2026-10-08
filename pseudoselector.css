@@ -1,0 +1,35 @@
+img:hover{
+    border: 3px solid rgb(51, 41, 185);
+}
+input:focus{
+    background-color: yellow;
+    border: 2px solid black;
+    font-style: oblique;
+}
+
+a:active{
+    color: rgb(0, 255, 64);
+}
+
+
+/* div>p:first-child{
+    color: coral;
+}
+
+div>p:last-child{
+    color: greenyellow;
+}
+div>p:nth-child(3){
+    color: blue;
+}
+div>p:nth-child(2n){
+    color: rgb(234, 28, 199);
+} */
+
+input:checked+label{
+    color: rgb(212, 63, 26);
+}
+
+ul>li:not(#frnd){
+    color: cyan;
+}

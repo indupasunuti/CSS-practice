@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+#indu {
+  height: 100px;
+  width: 150px;
+  border: 2ps solid black;
+  background-color: aquamarine;
+
+  overflow: scroll;
+  overflow: auto;
+}
+#nidhi {
+  height: 150px;
+  width: 450px;
+  border: 2px solid red;
+
+  overflow: scroll;
+  overflow: auto;
+}

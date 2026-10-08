@@ -1,0 +1,19 @@
+/* DESCEMNDENT SELECOTR*/
+/* div p{
+    color: chartreuse;
+    font-style: oblique;
+    font-size:xx-large;
+} */
+
+/* CHILD SELECTOR */
+ul>li{
+    color: blue;
+    font-style: italic;
+    font-size: xx-large;
+}
+
+/* ADJACENT SELECTOR */
+/* h1+p{
+    color: red;
+    border: black;
+} */

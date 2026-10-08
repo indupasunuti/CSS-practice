@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    /* #static{
+        height: 150px;
+        width: 170px;
+        border: 3px solid rgb(239, 115, 219);
+        background-color: rgb(65, 230, 239);
+        position: static;
+    } */
+    /* #relative{
+        height: 150px;
+        width: 170px;
+        border: 3px solid rgb(119, 115, 239);
+        background-color: rgb(34, 221, 62);
+        position: relative;
+        top: 10px;
+        left: 20px;
+    } */
+    /* ABSOLUTE */
+    #parent {
+      height: 350px;
+      width: 280px;
+      border: 3px solid rgb(9, 9, 9);
+      background-color: rgb(34, 221, 62);
+      margin: 20px;
+      position: relative;
+    }
+    div {
+      height: 70px;
+      width: 70px;
+      border: 2px solid rgb(10, 12, 6);
+    }
+    #one {
+      background-color: aqua;
+      position: absolute;
+      left: 30px;
+    }
+    #two {
+      background-color: rgb(232, 111, 212);
+      
+    }
+    #three {
+      background-color: rgb(58, 47, 179);
+    }
+
+    /* STICKY */
+  section{
+    height: 1000px;
+    border: px solid yellowgreen;
+  }
+  #sec_one{
+    background-color: goldenrod;
+  }
+  #sticky{
+    background-color: aquamarine;
+  }
+  nav{
+    height: 40px;
+    border: 2ps solid red;
+    background-color: blue;
+    position: sticky;
+    top: 100px;
+  }
+  [alt="sandhya"]{
+    position: absolute;
+  }
+  [alt="suma"]{
+    position: absolute;
+    z-index: 1;
+  }
+  [alt="sisters"]{
+    position: absolute;
+    z-index: 2;
+  }
+  </style>
+  <body>
+    <!-- <div id="static"></div>
+    <div id="relative"></div>
+    <section id="parent">
+      <div id="one"></div>
+      <div id="two"></div>
+      <div id="three"></div>
+    </section> -->
+
+    <!-- STICKY -->
+     <!-- <section id="sec_one"></section>
+     <section id="sticky">
+     <nav></nav>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque aspernatur ipsa veritatis eaque asperiores iure numquam reiciendis repellat totam!</p></section> -->
+
+    <!-- Z-INDEX -->
+     <img src="./UMS02616.JPG" alt="sandhya" height="250px" width="240px">
+     <img src="./UMS04461.JPG" alt="suma"  height="250px" width="240px">
+     <img src="./UMS04514.JPG" alt="sisters"  height="250px" width="240px">
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #parent{
+        height: 300px;
+        width: 450px;
+        border: 5px solid black;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column-reverse;
+        column-gap: 10px;
+        gap: 10px 30px;
+        gap: 100px;
+        
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        
+    }
+
+    div{
+        height: 60px;
+        width: 60px;
+        border: 2px solid black;
+    }
+    #one{
+        background-color: rgb(71, 48, 221);
+    }
+    #two{
+        background-color: rgb(90, 198, 217);
+    }
+    #three{
+        background-color: rgb(226, 82, 234);
+    }
+</style>
+
+<body>
+    <section id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        
+    </section>
+</body>
+</html>

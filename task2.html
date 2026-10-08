@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 150px;
+        width: 250px;
+        border: 2px solid black;
+        background-color: white;
+        position: relative;
+        left: 200px;
+        top: 150px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    [alt="pepsi"]{
+        position: absolute;
+        z-index: 1;
+    }
+    [alt="burger"]{
+        position: absolute;
+        left: 80px;
+        z-index: 2;
+    }
+    [alt="fries"]{
+        position:absolute;
+        left: 130px;
+        z-index: 0;
+    }
+</style>
+<body>
+    <section id="box">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/047/429/595/small/refreshing-glass-of-cola-with-ice-cubes-splashing-out-perfect-for-representing-a-cool-beverage-or-drink-advertisement-png.png" alt="pepsi" height="150px" width="150px">
+        <img src="https://www.nicepng.com/png/full/83-834516_girl-eating-burger-png.png" alt="burger" height="150px" width="100px">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/046/544/935/small_2x/french-fries-flying-out-of-paper-bucket-isolated-on-a-transparent-background-png.png" alt="fries" height="150px" width="120px">
+    </section>
+</body>
+</html>
